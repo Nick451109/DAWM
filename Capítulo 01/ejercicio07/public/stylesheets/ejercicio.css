@@ -22,7 +22,9 @@
 */
 
 /* Inicio */
-
+*{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+}
 /* Fin */
 
 /*
@@ -36,7 +38,10 @@
 */
 
 /* Inicio */
-
+#section-one{
+  background-color: var(--color-1);
+  color: white;
+}
 /* Fin */
 
 /*
@@ -51,7 +56,9 @@
 */
 
 /* Inicio */
-
+#section-two{
+  background: linear-gradient(170deg, var(--color-1) 0%, var(--color-1) 50%, var(--color-2) 50%, var(--color-2) 100%);
+}
 /* Fin */
 
 /*
@@ -65,7 +72,9 @@
 
 
 /* Inicio */
-
+#section-three{
+  background-color: var(--color-2);
+}
 /* Fin */
 
 
@@ -83,7 +92,11 @@
 */
 
 /* Inicio */
-
+h1{
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.2rem + 2.66vw, 4rem);
+  margin: 0.3em 0 0.1em 0;
+}
 /* Fin */
 
 /*
@@ -96,7 +109,11 @@
 */
 
 /* Inicio */
-
+h2{
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.1rem + 1.33vw, 2.5rem);
+  margin: 0.3em 0 0.1em 0;
+}
 /* Fin */
 
 /*
@@ -107,7 +124,9 @@
 */
 
 /* Inicio */
-
+section{
+  padding: 30px;
+}
 /* Fin */
 
 
@@ -121,7 +140,11 @@
 */
 
 /* Inicio */
-
+.container{
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
 /* Fin */
 
 /*
@@ -134,7 +157,11 @@
 */
 
 /* Inicio */
-
+.card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
 /* Fin */
 
 /*
@@ -152,7 +179,15 @@
 */
 
 /* Inicio */
-
+div.container div.card{
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 30px 50px -25px #ad3500;
+  position: relative;
+  transition: all 0.3s ease;
+  top: 0;
+} 
 /* Fin */
 
 
@@ -166,7 +201,10 @@
 */
 
 /* Inicio */
-
+.card > p{
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
 /* Fin */
 
 /*
@@ -178,7 +216,9 @@
 */
 
 /* Inicio */
-
+h2 + p{
+  text-align: justify;
+}
 /* Fin */
 
 /*
@@ -190,7 +230,9 @@
 */
 
 /* Inicio */
-
+h1 ~ p{
+  text-align: center;
+}
 /* Fin */
 
 /*
@@ -203,5 +245,8 @@
 */
 
 /* Inicio */
-
+.card:hover{
+  box-shadow: 0px 50px 75px -25px #ad3500 !important;
+  top: -20px !important;
+}
 /* Fin */

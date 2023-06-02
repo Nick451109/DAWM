@@ -17,7 +17,9 @@ img {
 
 #bloque1 {
   /* Inicio */
- 
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
   /* Fin */
 }
 
@@ -33,7 +35,7 @@ img {
 
 #bloque1 img:nth-child(4) {
   /* Inicio */
-  
+  order: -1;
   /* Fin */
 }
 
@@ -53,6 +55,9 @@ img {
 
 #bloque2 {
   /* Inicio */
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-row-gap: 10px;
   /* Fin */
 }
