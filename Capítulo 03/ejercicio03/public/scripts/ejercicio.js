@@ -15,8 +15,15 @@ function condicionales() {
         Caso contrario, asigne a mensaje1 el valor de 'No puede manejar'
     */
 
-    /* Inicio */
+    /* Inicio 
+    if(edad >= 18 && estado == 'CA'){
+        mensaje1 = 'Puede manejar'
+    }else{
+        mensaje1 = 'No puede manejar'
+    }*/
     
+
+    if( edad >= 18 && estado == 'CA') { mensaje1 = 'Puede manejar' } else { mensaje1 = 'No puede manejar'}
     /* Fin */
 
     let velocidad = 90;
@@ -28,8 +35,10 @@ function condicionales() {
         Caso contrario, asigne el valor 'OK' a mensaje2      
     */
 
-    /* Inicio */
+    /* Inicio 
+    velocidad >= 120 ? (mensaje2 = 'Muy rápido'):(mensaje2 = 'OK');*/
     
+    mensaje2 = velocidad >= 120 ? 'Muy rápido' : 'OK';
     /* Fin */
 
     return mensaje1 + ' '+ mensaje2;
@@ -52,7 +61,11 @@ function repeticion() {
         Agregue cada uno de los valores de i al final del arreglo elementos1 con el método push
     */
     
-    /*Inicio*/
+    /*Inicio
+    for(let i = 1; i<5; i++){
+        elementos1.push(i)
+    }*/
+    for (i = 1; i < 5; i++) { elementos1.push(i) }
     
     /*Fin*/
 
@@ -66,8 +79,12 @@ function repeticion() {
         Agregue cada uno de los valores del objeto a partir de la clave en el arreglo elementos2 con el método push
     */
 
-    /*Inicio*/
+    /*Inicio
+    for(clave in objeto){
+        elementos2.push(objeto[clave])
+    }*/
     
+    for(clave in objeto) { elementos2.push(objeto[clave]) }
     /*Fin*/
 
 
@@ -92,7 +109,9 @@ function funciones() {
     */
 
     /*Inicio*/
-    
+    funcionAnonima = function(){
+        resultado1 = 'Función anónima';
+    };
     /*Fin*/
 
     funcionAnonima()
@@ -105,8 +124,9 @@ function funciones() {
         Dentro de la función asigne el valor 'Función flecha' a la variable resultado2
     */
 
-    /*Inicio*/
-    
+    /*Inicio
+    funcionFlecha = () => resultado2 = 'Función flecha';*/
+    funcionFlecha = () => {resultado2 = 'Función flecha'};
     /*Fin*/
 
     funcionFlecha()

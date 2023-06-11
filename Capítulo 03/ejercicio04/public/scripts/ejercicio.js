@@ -15,7 +15,8 @@ function byId() {
 
 
     /*Inicio*/
-
+    elemento = document.getElementById("nombre");
+    elemento.textContent = 'Muhammed Erdem'
     /*Fin*/
 }
 
@@ -38,7 +39,9 @@ function byClass() {
 
 
     /*Inicio*/
-
+    arreglo = document.getElementsByClassName('profile-card-loc__txt')
+    elemento = arreglo[0]   
+    elemento.textContent = 'Istanbul, Turkey'
     /*Fin*/
 
 }
@@ -47,7 +50,11 @@ function byClass() {
 /*
     Revisar 
         https://www.javascripttutorial.net/javascript-dom/javascript-getelementsbytagname/
+        returns a live HTMLCollection of elements with the matching tag name in the order which they appear in the document.
+        automatically updated when elements with the matching tag name are added and/or removed from the document.
+        
         https://www.javascripttutorial.net/javascript-dom/javascript-setattribute/
+
 */
 
 function byTagName() {
@@ -60,10 +67,12 @@ function byTagName() {
         Asigne el primer valor del arreglo a la variable elemento
         Coloque el atributo (setAttribute) 'src' del elemento con el valor 'https://res.cloudinary.com/muhammederdem/image/upload/v1537638518/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg'
     */
-
+    arreglo = document.getElementsByTagName('img')
+    elemento = arreglo[0]
+    elemento.setAttribute('src','https://res.cloudinary.com/muhammederdem/image/upload/v1537638518/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg')
 
     /*Inicio*/
-
+    
     /*Fin*/
 
 }
@@ -107,7 +116,8 @@ function querySelector() {
 
 
     /*Inicio*/
-
+    elemento = document.querySelector('div.profile-card-inf')
+    elemento.innerHTML = textoHTML
     /*Fin*/
 
 }
