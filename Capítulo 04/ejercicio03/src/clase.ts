@@ -8,7 +8,7 @@ class Person {
     firstName;
     lastName;
 
-    constructor(ssn, firstName, lastName) {
+    constructor(ssn: number, firstName: string, lastName: string) {
         this.ssn = ssn;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -25,7 +25,8 @@ let claseInstanciacion = () => {
 	//Instancie la clase persona en la variable person 
 
 	/* Inicio */
-	
+	let person = new Person(987654321,"Nick","Arevalo");
+    console.log(person.getFullName());
 	/* Fin */
 
 	return person

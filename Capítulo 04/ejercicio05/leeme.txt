@@ -1,0 +1,1 @@
+los test (specs) están dentro de cada componente :) ej: src/app/app.component.spec.ts
